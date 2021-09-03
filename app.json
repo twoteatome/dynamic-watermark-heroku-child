@@ -6,9 +6,6 @@
   "keywords": ["python", "fastapi", "heroku", "postgres"],
   "success_url": "/",
   "env": {
-    "DATABASE_URL": {
-      "description": "Main process (or domain) Postgres database url."
-    },
     "CREATE_TOKEN": {
       "description": "A secret key for creating new password.",
       "generator": "secret"
