@@ -1,0 +1,6 @@
+aiofiles
+fastapi
+opencv-python--headless
+numpy
+psycopg2-binary
+uvicorn
