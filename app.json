@@ -1,0 +1,81 @@
+{
+  "name": "Password Watermark for Image",
+  "description": "Dynamic watermark for Image",
+  "website": "https://smallteaplayground.epizy.com",
+  "repository": "https://github.com/twoteatome/dynamic-watermark-heroku",
+  "keywords": ["python", "fastapi", "heroku", "postgres"],
+  "success_url": "/",
+  "env": {
+    "DATABASE_URL": {
+      "description": "Main process (or domain) Postgres database url."
+    },
+    "CREATE_TOKEN": {
+      "description": "A secret key for creating new password.",
+      "generator": "secret"
+    },
+    "GET_TOKEN": {
+      "description": "A secret key for reading all password.",
+      "generator": "secret"
+    },
+    "DELETE_TOKEN": {
+      "description": "A secret key for deleting password.",
+      "generator": "secret"
+    },
+    "ADMIN_TOKEN": {
+      "description": "A secret key for admin page login.",
+      "generator": "secret"
+    },
+    "REFRESH_TOKEN": {
+      "description": "A secret key for refresh and get newest data from database.",
+      "generator": "secret"
+    },
+    "CODE_GENERATE_TOKEN": {
+      "description": "A secret key for generating html code.",
+      "generator": "secret"
+    },
+    "RED_COLOR": {
+      "description": "Red color value in RGB. From 0 to 255.",
+      "value": "255"
+    },
+    "GREEN_COLOR": {
+      "description": "Green color value in RGB. From 0 to 255.",
+      "value": "0"
+    },
+    "BLUE_COLOR": {
+      "description": "Blue color value in RGB. From 0 to 255.",
+      "value": "0"
+    },
+    "NOTFOUND_URL": {
+      "description": "Not found image url.",
+      "value": "https://i1.wp.com/www.ecommerce-nation.com/wp-content/uploads/2018/10/404-error.jpg"
+    },
+    "HEROKU_APP_NAME": {
+      "description": "Heroku app name."
+    },
+    "HOMEPAGE_URL": {
+      "description": "Homepage url.",
+      "value": "smallteaplayground.epizy.com"
+    },
+    "MAX_WATERMARK": {
+      "description": "Maximum number of watermarks. Integer value",
+      "value": "10"
+    },
+    "OPACITY": {
+      "description": "Opacity. Float value, from 0 to 1",
+      "value": "0.5"
+    },
+    "FONT_SCALE": {
+      "description": "Text scale. Float value",
+      "value": "1.0"
+    },
+    "THICKNESS": {
+      "description": "Thickness of text. Integer value",
+      "value": "1"
+    },
+    "PASSWORD_LENGTH": {
+      "description": "Length of password. Integer value, max value is 50, min value is 1",
+      "value": "10"
+    }
+  },
+  "image": "heroku/python"
+}
